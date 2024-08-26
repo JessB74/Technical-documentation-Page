@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <nav id="navbar">
+      <header class="main-header">HTML & CSS</header>
+      <ul>
+
+      <li><a class="nav-link" href="#Introduction"">Introduction</a></li>
+
+     <li><a class="nav-link" href="#HTML_Basics">HTML Basics</a></li>
+
+      <li><a class="nav-link" href="#CSS_Basics">CSS Basics</a></li>
+
+      <li><a class="nav-link" href="#HTML_Elements">HTML Elements </a></li>
+
+      <li><a class="nav-link" href="#CSS_Selectors"> CSS Selectors</a></li>
+
+      <li><a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a></li>
+
+      <li><a class="nav-link" href="#CSS_Layout">CSS Layout</a></li>
+
+      <li><a class="nav-link" href="#Responsive_Design"> Responsive Design</a></li>
+
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+
+      </ul>
+    </nav>
+  <main id="main-doc">
+    <h1>HTML & CSS Documentation</h1>
+    <section class="main-section" id="Introduction">
+      <header class="first">Introduction</header>
+<p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are essential tools for creating web pages. HTML defines the structure and content of a webpage, while CSS is responsible for its visual appearance and layout.</p>
+    </section>
+
+    <section class="main-section" id="HTML_Basics">
+       <header>HTML Basics</header>
+       <p>
+         
+            <p>HTML is the standard markup language used to create web pages. It describes the structure of a web page using a variety of elements and attributes.</p>
+            <ul>
+                <li><strong>Elements:</strong> The building blocks of HTML.</li>
+                <li><strong>Tags:</strong> Define the start and end of an HTML element.</li>
+                <li><strong>Attributes:</strong> Provide additional information about elements.</li>
+            </ul>
+       </p>
+
+    </section>
+
+    <section class="main-section" id="CSS_Basics">
+       <header>CSS Basics</header>
+       <article>
+         <p>CSS is a style sheet language used for describing the look and formatting of a document written in HTML. CSS allows you to apply styles to web pages.</p>
+            <ul>
+                <li><strong>Selecting elements:</strong> Target HTML elements to style using CSS selectors.</li>
+                <li><strong>Styling properties:</strong> Apply properties like color, font, and layout to selected elements.</li>
+                <li><strong>Responsive design:</strong> Make web pages look good on all devices.</li>
+                </ul>
+       </article>
+
+    </section>
+
+    <section class="main-section" id="HTML_Elements">
+       <header>HTML Elements</header>
+            <p>HTML elements are the building blocks of HTML pages. Examples include headings, paragraphs, links, images, and lists.</p>
+            <pre><code>&lt;html&gt;</code></pre>
+            <pre><code>&lt;head&gt;</code></pre>
+            
+            <pre><code>&lt;meta charset="utf-8"&gt;</code></pre>
+            <pre><code>&lt;linkrel="stylesheet" href="styles.css&gt;</code></pre>
+
+            <pre><code>&lt;title&gt;This is a title&lt;/title&gt;</code></pre>
+            <pre><code>&lt;/head&gt;</code></pre>
+            <pre><code>&lt;body&gt</code></pre>
+            <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://www.example.com"&gt;Example&lt;/a&gt;</code></pre>
+<pre><code>&lt;/body&gt;</code></pre>
+<pre><code>&lt;/html&gt;</code></pre>
+    </section>
+
+    <section class="main-section" id="CSS_Selectors">
+       <header>CSS Selectors</header>
+       <article>
+         <p>CSS selectors are patterns used to select the elements you want to style.</p>
+            <ul>
+                <li><strong>Element Selector:</strong> Selects elements by name. Example:
+<code>p&lcub;color:red&rcub;</code></li>
+                <li><strong>Class Selector:</strong> Selects elements by class name. Example: <code>.classname&lcub;background-color:blue&rcub;</code></li>
+                <li><strong>ID Selector:</strong> Selects elements by ID. Example: <code>#idname&lcub;font-size:20px&rcub;</code></li>
+                <li><strong>Attribute Selector:</strong> Selects elements based on an attribute. Example: <code>input&lsqb;type=text&rsqb;&lcub;width:20px&rcub;</code></li>
+                <li><strong>Universal Selector:</strong>Selects all elements. Example: <code>*&lcub;box-sizing:border-box&rcub;</code></li>
+            </ul>
+
+       </article>
+
+    </section>
+    <section class="main-section" id="CSS_Box_Model">
+       <header>CSS Box Model</header>
+   
+            <p>The CSS box model is a fundamental concept that determines the size, padding, border, and margin of HTML elements.</p>
+      <img src="https://miro.medium.com/v2/resize:fit:408/1*sKnLrT1TtqWDZg7GWoBCow.png" >
+            <ul>
+                <li><strong>Content:</strong> The actual content of the box, where text and images appear.</li>
+                <li><strong>Padding:</strong> Clears an area around the content.</li>
+                <li><strong>Border:</strong> A border that goes around the padding and content.</li>
+                <li><strong>Margin:</strong> Clears an area outside the border.</li>
+            </ul>
+
+    </section>
+    <section class="main-section" id="CSS_Layout">
+       <header>CSS Layout</header>
+    
+            <p>CSS provides several layout mechanisms for creating the overall layout of your web pages, including Flexbox, Grid, and positioning techniques.</p>
+            <pre><code>/* Example code of a Flexbox layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}</code></pre>
+            <pre><code>/* Example code of a Grid layout */
+.container {
+    display: grid;
+    grid-template-columns:1fr 2fr auto;
+    grid-template-rows:2px minmax(20px, 40px);
+    justify-content: space-around;
+    align-items: center;
+}</code></pre>
+
+<pre><code>/* Example code of  CSS position */
+.container {
+   position: relative;
+    top:30px;
+    bottom: 0;
+   left:150px;
+   right: 40px;
+}</code></pre>
+
+    </section>
+    <section class="main-section" id="Responsive_Design">
+       <header>Responsive Design</header>
+     <p>Responsive design is a crucial aspect of modern web development, ensuring that websites look and function well on a variety of devices, from desktop computers to tablets and smartphones. The goal is to create a seamless user experience regardless of screen size or resolution.<br>Bootstrap simplifies this process with its grid system and responsive components.<br> Flexbox offers flexible, one-dimensional layouts that easily adjust to screen changes.<br> CSS Grid provides more control for creating complex, two-dimensional layouts. <br>Together, these tools help developers create visually consistent and functional web pages on any device.</p>
+            <pre><code>/* Example of a media query */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}</code></pre>
+           <pre><code>/* Example of a Bootstrap grid layout*/
+           
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+    &lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+   &lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+ &lt;/div>
+&lt;/div>
+</code></pre>
+
+    </section>
+    <section class="main-section" id="Reference">
+       <header>Reference</header>
+    <p>"All the documentation on this page is based on information from various web development resources."</p>
+
+    </section>
+  </main>
+</body>
+</html>
